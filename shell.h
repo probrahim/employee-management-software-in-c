@@ -11,3 +11,10 @@ typedef struct {
 } Employer;
 
 
+
+void make_employer();
+
+
+#endif
+
+
