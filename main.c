@@ -3,5 +3,5 @@
 
 int main()
 {
-    edit_employer();
+    del_employer();
 }
