@@ -14,7 +14,9 @@ typedef struct {
 
 void make_employer();
 void edit_employer();
-
+void del_employer();
+// void list_employer();
+// void genrate_rapport();
 
 #endif
 
