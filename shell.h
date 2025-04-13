@@ -13,8 +13,8 @@ typedef struct {
 
 
 void make_employer();
+void edit_employer();
 
 
 #endif
-
 
