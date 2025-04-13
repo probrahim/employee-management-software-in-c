@@ -50,4 +50,13 @@ void edit_employer() {
     printf("Entrez salaire : ");
     scanf("%f", &d.s);
 
+    if (fprintf(f, "%d %s %s %.2f\n", d.id, d.nom, d.prenom, d.s) < 0) {
+        printf("Erreur write %s.\n", filename);
+    } else {
+        printf("Input Full  %s.\n", filename);
+    }
+
+    fclose(f);
+
+    printf("Mise à jour réussie.\n");
 }
