@@ -35,5 +35,19 @@ void edit_employer() {
         printf("Fichier %s supprimé avec succès.\n", filename);
     }
 
+    f = fopen(filename, "w");
+    if (f == NULL) {
+        printf("Erreur d'ouverture de %s en mode écriture.\n", filename);
+        return;
+    } else {
+        printf("Fichier %s ouvert en écriture avec succès.\n", filename);
+    }
+    puts("\t nouvelle input \t :");
+    printf("Entrez Nom : ");
+    scanf("%s", d.nom);
+    printf("Entrez Prenom : ");
+    scanf("%s", d.prenom);
+    printf("Entrez salaire : ");
+    scanf("%f", &d.s);
 
 }
