@@ -26,5 +26,14 @@ void edit_employer() {
         return;
     }
 
+    fclose(f);
+
+    if (remove(filename) != 0) {
+        printf("Erreur lors de la suppression de %s.\n", filename);
+        return;
+    } else {
+        printf("Fichier %s supprimé avec succès.\n", filename);
+    }
+
 
 }
