@@ -21,5 +21,8 @@ void del_employer(){
     if (f == NULL){
         printf("non trouve");
     }
+    else {
 
+    }
+    fclose(f);
 }
