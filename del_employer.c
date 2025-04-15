@@ -22,7 +22,20 @@ void del_employer(){
         printf("non trouve");
     }
     else {
+        printf("vous ete sur : \n (taper 1 || 0) \t : ");
+        scanf("%d",&v);
+        while(1){
+            if (v==0){
+                printf("procedure non complet");
+                return;
+            }
 
+            else{
+                printf("fichier supprimer");
+                remove(filename);
+                break;
+            }
+        }
     }
     fclose(f);
 }
